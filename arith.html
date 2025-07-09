@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Simple Javascript Calculator- simple arithmetic calculation</title>
+<script language="javascript" type="text/javascript">
+function add()
+{
+a=Number(document.calculator.name1.value);
+b=Number(document.calculator.name2.value);
+c=a+b;
+document.calculator.total.value=c;
+}
+function sub()
+{
+a=Number(document.calculator.name1.value);
+b=Number(document.calculator.name2.value);
+c=a-b;
+document.calculator.total.value=c;
+}
+function mul()
+{
+a=Number(document.calculator.name1.value);
+b=Number(document.calculator.name2.value);
+c=a*b;
+document.calculator.total.value=c;
+}
+function div()
+{
+a=Number(document.calculator.name1.value);
+b=Number(document.calculator.name2.value);
+c=a/b;
+document.calculator.total.value=c;
+}
+function mod()
+{
+a=Number(document.calculator.name1.value);
+b=Number(document.calculator.name2.value);
+c=a%b;
+document.calculator.total.value=c;
+}
+</script>
+</head>
+<body>
+<form name="number">
+<h2> arithmetic operation</h2>
+Number1:<input type="text" name="name1"><br>
+Number2:<input type="text" name="name2"><br>
+Get result:<input type="text" name="total"><br>
+<input type="button" value="ADD" onclick="add();">
+<input type="button" value="SUB" onclick="sub();">
+<input type="button" value="MUL" onclick="mul();">
+<input type="button" value="DIV" onclick="div();">
+<input type="button" value="MOD" onclick="mod();">
+</form>
+</body>
+</html>
+
+
